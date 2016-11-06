@@ -1,15 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: /application.js
-    destination: /var/www/html/
-  - source: /application.php
-    destination: /var/www/html/
-  - source: /index.html
-    destination: /var/www/html/
-  - source: /example.json
-    destination: /var/www/html/
-  - source: /resources/
+  - source: /
     destination: /var/www/html/
 hooks:
   BeforeInstall:
