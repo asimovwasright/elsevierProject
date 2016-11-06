@@ -1,0 +1,172 @@
+
+* {
+  transition: all .2s ease-in-out;
+  font-family: sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+header {
+  padding: 50px;
+  background-color: #131313;
+  text-align: center;
+  color: white;
+}
+
+h1 {color: #e9711c; font-family: NexusSerif,Georgia,serif;}
+
+h4 {
+  color: #131313;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 2px grey;
+}
+
+.fontBig {
+  font-size: 24px;
+}
+.fontMedium {
+  font-size: 18px;
+}
+.fontSmall {
+  font-size: 12px;
+}
+
+#results {
+  display:block;
+  padding: 15px 25px 75px 25px;
+  color: #131313;
+}
+
+#results .list, #results .search {
+  display: none;
+  text-transform: capitalize;
+}
+
+#results .search ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: -1px 0px;
+  width: 100%;
+  min-width: 300px;
+}
+
+#results .search ul:nth-child(4) {
+  border-bottom: thin solid darkgrey;
+  border-left: thin solid darkgrey;
+  border-right: thin solid darkgrey;
+  border-top: thin solid darkgrey;
+  box-shadow: -5px -10px 10px #ccc;
+  overflow-x: hidden;
+}
+
+#results .search ul:not(:nth-child(4)) {
+  border-bottom: thin dotted darkgrey;
+  border-left: thin dotted darkgrey;
+}
+
+#results .search ul li {
+  padding: 5px 15px;
+  margin: 10px;
+}
+
+#results .more {
+  cursor: pointer;
+}
+
+#results .more:hover {
+  text-decoration: underline;
+}
+
+#results .productTitle {
+  position: relative;
+  font-weight:bold;
+  padding: 20px;
+  width: 100%;
+  max-width: 750px;
+  min-width: 300px;
+  z-index: 100;
+  background-color: white;
+  text-align: center;
+  color: #074B7A;
+  border-top: thin solid darkgrey;
+  border-left: thin solid darkgrey;
+  border-right: thin solid darkgrey;
+  box-shadow: -5px -5px 10px #ccc;
+}
+
+
+#results .productKey {
+  font-weight:bold;
+  margin-right: 25px;
+}
+
+#results .productValue {
+  font-weight: normal;
+  color: #e9711c;
+}
+
+#results .search ul li ul {
+  display: none;
+}
+
+#searchTitles input {
+  width: 50%;
+  max-width: 500px;
+  min-width: 250px;
+  padding: 5px;
+  margin-left: 10px;
+}
+
+button {
+  margin: 25px;
+  padding: 10px 25px;
+  border: thin solid grey;
+  color: white;
+  background-color: grey;
+  cursor: pointer;
+  outline: none;
+  font-weight: 900;
+}
+
+button:hover {
+  border: thin solid #131313;
+  color: #131313;
+  background-color: white;
+  cursor: pointer;
+}
+
+.potential {
+  display: inline-block;
+  clear: both;
+  float: left;
+  padding: 5px 10px;
+  border-bottom: thin dotted #e9711c;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  cursor: zoom-in;
+}
+
+.potential::before {
+  content: "\279E";
+  margin-right: 15px;
+}
+
+@media (max-width:768px) {
+  .fontBig {
+    font-size: 15px;
+  }
+  .fontMedium {
+    font-size: 13px;
+  }
+  .fontSmall {
+    font-size: 12px;
+  }
+  #results {
+    padding: 15px 0px 75px 0px;
+  }
+  #results .search ul li {
+    padding: 5px 0px;
+    margin: 5px;
+  }
+}
